@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!------------ Nav ------------>
+    <nav>
+        <div class="nav-left">
+            <a href="#section1"><h1>Saif <span>Alnahhal</span></h1></a>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#section1" target="_self">Home</a></li>
+                <li><a href="#section2" target="_self">About</a></li>
+                <li><a href="#section3" target="_self">Projects</a></li>
+                <li><a href="#section4" target="_self">Contact</a></li>
+                <li><a href="signup.html" target="_self">Sign up</a></li>
+                <li><a href="login.html" target="_self">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!------------ Header ------------>
+    <section id="section1">
+        <header>
+            <h2>My<span>Portfolio</span></h2>
+        </header>
+    </section>
+
+    <!------------ About ------------>
+    <section id="section2">
+        <div class="container">
+                <h2>About</h2>
+                <hr>
+            <div class="about">
+                <img src="WIN_20240415_21_25_11_Pro-removebg-preview.png" alt="Saif-Alnahhal">
+                <p>Saif Al-Nahhal was born on August 14, 2010, in Cairo, Egypt. He likes to play sports, mostly soccer, and he loves to code. Ever since Saif was a little kid, he would watch his dad work and he would see a lot of numbers and signs that he did not understand. So, he got really interested and he asked his dad about it. Saif's dad said that it was a programming language and it was used to make a lot of things like websites, games, software for electronics, and a lot more things. Ever since then, Saif really got into coding and now he wants to become a software engineer.</p>
+            </div>
+        </div>
+    </section>
+    <!------------ Projects ------------>
+    <section id="section3">
+        <div class="projects container">
+            <h2>My projects</h2>
+            <hr>
+            <div class="project">
+                <a href="https://saif-alnahhal.github.io/Project/" target="_blank"><img src="Screenshot (3).png" alt="Screenshot"><p>Made with HTML and CSS</p></a>
+            </div>
+            <div class="project">
+                <a href="https://saif-alnahhal.github.io/project2/" target="_blank"><img src="Screenshot (5).png" alt="Screenshot"><p>Made with HTML and CSS</p></a>
+            </div>
+            <div class="project">
+                <a href="https://saif-alnahhal.github.io/Calculator/" target="_blank"><img src="Screenshot (6).png" alt="Screenshot"><p>Made with HTML, CSS, and javaScript</p></a>
+            </div>
+        </div>
+    </section>
+
+    <!------------ Contact ------------>
+    <section id="section4">
+        <div class="container">
+            <h2>Contact</h2>
+            <hr>
+            <div class="contact">
+                <div class="left-contact">
+                    <form>
+                    <input type="text" placeholder="First Name"/>
+                    <input type="text" placeholder="Last Name"/>
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Your message" cols="30" rows="10"></textarea>
+                    </form>
+                    <button>Submit</button>
+                </div>
+                <div class="right-contact">
+                    <h2>My location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d172362.54483768757!2d-52.71635624634696!3d47.54512191849874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1713135728195!5m2!1sen!2sca"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------ Footer ------------>
+    <div class="footer">
+        <h3>@copyright by Saif-Alnahhal - 2024</h3>
+    </div>
+    
+    <script>
+        document.querySelector(".left-contact button").onclick = function(){
+            document.querySelector(".left-contact button").style.backgroundColor = "gray"
+            alert ("Massage sent!")
+        }
+    </script>
+</body>
+</html>
